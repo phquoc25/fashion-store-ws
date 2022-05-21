@@ -1,0 +1,5 @@
+### GET all products
+curl -X GET -v http://localhost:8080/fashion-store-ws/products
+
+### Create a new product
+curl -X POST -H "Content-Type: application/json" -d '{"title": "my title"}' http://localhost:8080/products

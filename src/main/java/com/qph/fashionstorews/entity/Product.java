@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Product {
     @Id
-    private String uuid;
+    private String id;
     private String title;
     private String shortDescription;
     private String longDescription;

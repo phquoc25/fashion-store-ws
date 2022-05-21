@@ -18,7 +18,7 @@ public class ProductDto {
 
     public static ProductDto fromProduct(Product product) {
         return ProductDto.builder()
-                .uuid(product.getUuid())
+                .uuid(product.getId())
                 .title(product.getTitle())
                 .shortDescription(product.getShortDescription())
                 .longDescription(product.getLongDescription())
