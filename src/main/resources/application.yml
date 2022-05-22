@@ -1,0 +1,10 @@
+server:
+  servlet:
+    context-path: /product-ws
+  cors:
+    allowed-origins: http://localhost:4200,http://localhost:4220
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017
+      database: products
