@@ -8,3 +8,17 @@ spring:
     mongodb:
       uri: mongodb://root:root@localhost:27017
       database: products
+keycloak:
+  enabled: true
+  realm: fashion-store
+  auth-server-url: http://127.0.0.1:8088
+  ssl-required: external
+  resource: fashion-store-client
+  security-constraints:
+    -
+      authRoles:
+        - user
+      securityCollections:
+        -
+          patterns:
+            - /products/*
