@@ -1,4 +1,4 @@
-package com.qph.fashionstorews.entity;
+package com.qph.productws.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

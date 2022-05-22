@@ -1,4 +1,4 @@
-package com.qph.fashionstorews;
+package com.qph.productws;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

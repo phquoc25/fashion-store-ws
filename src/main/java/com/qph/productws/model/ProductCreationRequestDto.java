@@ -1,4 +1,4 @@
-package com.qph.fashionstorews.model;
+package com.qph.productws.model;
 
 import lombok.Builder;
 import lombok.Data;

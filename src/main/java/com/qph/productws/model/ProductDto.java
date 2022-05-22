@@ -1,6 +1,6 @@
-package com.qph.fashionstorews.model;
+package com.qph.productws.model;
 
-import com.qph.fashionstorews.entity.Product;
+import com.qph.productws.entity.Product;
 import lombok.Builder;
 import lombok.Data;
 

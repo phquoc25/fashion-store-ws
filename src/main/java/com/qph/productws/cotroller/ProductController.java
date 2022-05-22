@@ -1,8 +1,8 @@
-package com.qph.fashionstorews.cotroller;
+package com.qph.productws.cotroller;
 
-import com.qph.fashionstorews.model.ProductCreationRequestDto;
-import com.qph.fashionstorews.model.ProductDto;
-import com.qph.fashionstorews.service.ProductService;
+import com.qph.productws.model.ProductCreationRequestDto;
+import com.qph.productws.model.ProductDto;
+import com.qph.productws.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +21,7 @@ public class ProductController {
     }
 
     @PostMapping("/products")
-    public ProductDto createProduct(@RequestBody ProductCreationRequestDto productCreationRequestDto) {
-        return productService.createProduct(productCreationRequestDto);
+    public List<ProductDto> createProduct(@RequestBody List<ProductCreationRequestDto> productCreationRequestDtos) {
+        return productService.createProducts(productCreationRequestDtos);
     }
 }
